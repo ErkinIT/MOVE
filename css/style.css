@@ -1,0 +1,217 @@
+/*****************************/
+/* HEADER */
+/*****************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  height: 13.3rem;
+  max-width: 144rem;
+  position: relative;
+  font-size: 2rem;
+  padding: 0 10rem;
+}
+
+.logo {
+  width: 18.2rem;
+  height: 5.4rem;
+  flex: 1;
+}
+
+/* .main-nav {
+  flex: 1;
+
+} */
+
+/* .small-btn {
+  border-radius: 1rem;
+  background-color: #377dff;
+  width: 7.9rem;
+  height: 3rem;
+  position: relative;
+} */
+
+/*****************************/
+/* NAVIGATION */
+/*****************************/
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  color: #8a94a6;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+/*****************************/
+/* SECTION HERO */
+/*****************************/
+
+.section-hero {
+  background-color: #ffffff;
+  padding-top: 12.4rem;
+  padding-bottom: 12.4rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 10.8rem;
+}
+
+.hero-text-box {
+  flex: 1;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  margin-bottom: 4.8rem;
+  color: #8a94a6;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 7.3rem;
+  color: #323b4b;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3.5rem;
+
+  color: #8a94a6;
+  margin-bottom: 3.6rem;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #377dff;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+  width: 7.9rem;
+  height: 3rem;
+}
+
+.btn--outline {
+  color: #377dff;
+  font-size: 2rem;
+}
+.hero-img-box {
+  position: relative;
+  flex: 1;
+}
+
+.play-icon img {
+  width: 1.5rem;
+  height: 2.5rem;
+}
+
+.play-icon {
+  width: 7.7rem;
+  height: 7.7rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #377dff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  top: 4.6rem;
+  left: 4.4rem;
+}
+
+.hero-img {
+  width: 60.4rem;
+  height: 61.6rem;
+  background: #c4c4c4;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.5rem;
+}
+
+/*****************************/
+/* SECTION OFFER */
+/*****************************/
+
+.section-offer {
+  align-items: center;
+  background-color: #fafbfc;
+  max-width: 144rem;
+  height: 109.9rem;
+}
+
+.offer-primary {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 7.3rem;
+  margin-bottom: 3.5rem;
+  color: #323b4b;
+  text-align: center;
+  padding-top: 10.8rem;
+}
+
+.offer-main {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+  text-align: center;
+
+  color: #8a94a6;
+  margin-bottom: 8.1rem;
+}
+
+.offer-card-img {
+  width: 60.4rem;
+  height: 28.5rem;
+  background-color: #ffffff;
+
+  border-radius: 1.5rem;
+  padding: 3.2rem 3.1rem;
+}
+
+.offer-card-img:first-child {
+  box-shadow: 0rem 5rem 7.7rem rgba(176, 183, 195, 0.22);
+}
+
+.offer-header {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  font-weight: 700;
+  color: #323b4b;
+  margin-bottom: 2.1rem;
+}
+
+.offer-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-bottom: 2.8rem;
+  color: #8a94a6;
+}
+
+.offer-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3.7rem;
+  gap: 3.2rem;
+}
+
+.offer-img {
+  margin-bottom: 2.9rem;
+}
