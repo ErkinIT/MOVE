@@ -215,3 +215,203 @@
 .offer-img {
   margin-bottom: 2.9rem;
 }
+
+/*****************************/
+/* SECTION CONTENT */
+/*****************************/
+
+.content-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content-img {
+  width: 60.4rem;
+  height: 61.6rem;
+  margin-top: 13.5rem;
+  margin-right: 10.2rem;
+}
+
+.content-text {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 7.3rem;
+
+  color: #323b4b;
+  margin-top: 27rem;
+  margin-bottom: 3.2rem;
+}
+
+.content-description {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+}
+
+/*****************************/
+/* SECTION VACANCY */
+/*****************************/
+
+.vacancy-section {
+  background-color: #fafbfc;
+  padding: 12.5rem;
+  /* margin-bottom: 12.5rem; */
+}
+
+.vacancy-section-heading {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 7.3rem;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  /* padding-top: 11rem; */
+  color: #323b4b;
+}
+
+.vacancy-section-subheading {
+  max-width: 77rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 7.8rem;
+  color: #8a94a6;
+}
+
+.vacancies {
+  /* margin: 0 auto; */
+  margin-bottom: 9.2rem;
+}
+
+.vacancy {
+  width: 88rem;
+  height: 11.5rem;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 42.4rem 24.4rem 1fr;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+}
+
+.vacancy:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.vacancy:hover {
+  box-shadow: 0rem 5rem 7.7rem rgba(176, 183, 195, 0.22);
+}
+
+.vacancy-categories {
+  width: 82.4rem;
+  height: 11.5rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+  padding: 0 3.2rem;
+  color: #323b4b;
+  /* margin-bottom: 2.7rem; */
+
+  display: grid;
+  grid-template-columns: 42.4rem 24.4rem 1fr;
+  align-items: center;
+}
+
+.vacancy-position {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #323b4b;
+}
+
+.vacancy-type,
+.vacancy-location {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #8a94a6;
+}
+
+.btn-secondary {
+  background-color: #e5f1ff;
+  color: #377dff;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #c4d4f3;
+}
+
+.btn-resume {
+  height: 6.6rem;
+  font-weight: 600;
+  font-size: 2rem;
+  background-color: #e5f1ff;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+  padding: 0 10.3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/*****************************/
+/* SECTION FOOTER */
+/*****************************/
+
+.footer {
+  width: 144rem;
+  background-color: #ffffff;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-address {
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-footer {
+  display: block;
+  margin-top: 13.2rem;
+  margin-bottom: 2rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+  margin-bottom: 3rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 13.2rem;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
