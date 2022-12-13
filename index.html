@@ -4,239 +4,286 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
 
-    <title>MOVE</title>
+    <script src="./js/script.js"></script>
+    <title>Move</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#">
-        <img class="logo" alt="move logo" src="img/Logo.svg" />
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a class="main-nav-link" href="#"
-              >Home <img class="chevron-down" src="img/icon-chevron-down-2.svg"
-            /></a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="#"
-              >Pages
-              <img class="chevron-down" src="img/icon-chevron-down-2.svg"
-            /></a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="#"
-              >Blog <img class="chevron-down" src="img/icon-chevron-down-2.svg"
-            /></a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="#"
-              >Portfolio
-              <img class="chevron-down" src="img/icon-chevron-down-2.svg"
-            /></a>
-          </li>
-          <li class="main-nav-link">
-            <a class="btn" href="#">Get Started</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="section-hero">
-        <div class="hero container">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">
-              We are a small team that thinks big!
-            </h1>
-            <p class="hero-description">
-              Have you been looking for a job for a long time where you will be
-              welcome? Send your resume to work with us!
-            </p>
-            <a href="#how" class="btn--outline">Find an opening &rarr;</a>
-          </div>
-          <div class="hero-img-box">
-            <img src="img/photo-1.svg" class="hero-img" alt="main-photo" />
-            <div class="play-icon">
-              <img src="img/play button.svg" alt="play icon" />
+    <header class="header" id="header-sticky">
+      <div class="container header-content">
+        <img class="logo" alt="Move logo" src="img/Logo.svg" />
+
+        <nav class="main-nav">
+          <a class="main-nav__link" href="#home"
+            >Home <img src="./img/icon-chevron-down-2.svg" alt="down-arrow"
+          /></a>
+          <a class="main-nav__link" href="#pages"
+            >Pages <img src="./img/icon-chevron-down-2.svg" alt="down-arrow"
+          /></a>
+          <a class="main-nav__link" href="#blog"
+            >Blog <img src="./img/icon-chevron-down-2.svg" alt="down-arrow"
+          /></a>
+
+          <a class="main-nav__link" href="#Portfolio"
+            >Portfolio
+            <img src="./img/icon-chevron-down-2.svg" alt="down-arrow"
+          /></a>
+
+          <button class="get-started-btn btn-primary nav__cta-btn">
+            Get Started
+          </button>
+        </nav>
+        <img src="./img/icon-menu 1.svg" alt="Menu" id="hamburger-icon" />
+
+        <nav class="mobile-nav">
+          <div class="container">
+            <div class="mobile-nav__header">
+              <img src="./img/Logo.svg" alt="Move" class="nav__logo" />
+              <img
+                src="./img/icons/close-icon.svg"
+                alt="Close"
+                id="close-icon"
+              />
             </div>
+
+            <ul class="mobile-nav__links">
+              <li>
+                <a class="mobile-nav__link" href="#home">Home </a>
+              </li>
+              <li>
+                <a class="mobile-nav__link" href="#pages">Pages </a>
+              </li>
+              <li>
+                <a class="mobile-nav__link" href="#blog">Blog </a>
+              </li>
+
+              <li>
+                <a class="mobile-nav__link" href="#Portfolio">Portfolio </a>
+              </li>
+
+              <button class="get-started-btn btn-primary mobile-nav__cta">
+                Get Started
+              </button>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="hero-section">
+      <div class="container hero-section-content">
+        <div class="hero-section-description">
+          <h1 class="hero-section-heading">
+            We are a small team that thinks big!
+          </h1>
+          <p class="hero-section-subheading">
+            Have you been looking for a job for a long time where you will be
+            welcome? Send your resume to work with us!
+          </p>
+          <a class="hero-section-cta" href="#"
+            >Find an opening
+            <img src="img/icon-arrow-right.svg" alt="arrow right"
+          /></a>
+        </div>
+
+        <div class="hero-section-img-wrapper">
+          <img
+            src="img/photo-1.svg"
+            class="hero-section-img"
+            alt="small team"
+          />
+          <div class="button-play">
+            <img src="img/play button.svg" alt="play button" />
           </div>
         </div>
-      </section>
-      <section class="section-offer container">
-        <h1 class="offer-primary">What we offer</h1>
-        <p class="offer-main">
+      </div>
+    </section>
+
+    <section class="offer-section">
+      <div class="container offer-section-content">
+        <h2 class="offer-section-heading">What we offer</h2>
+        <p class="offer-section-subheading">
           We offer you a huge number of advantages when applying for a job with
           us. Check out a few basic but important ones below.
         </p>
-        <div class="offer-options">
-          <div class="offer-card-img">
-            <img class="offer-img" src="img/icon-4.svg" />
-            <h1 class="offer-header">Full social package</h1>
-            <p class="offer-text">
+
+        <div class="offer-cards">
+          <div class="offer-card">
+            <img src="img/icon-4.svg" alt="Full social package" />
+            <p class="offer-card-heading">Full social package</p>
+            <p class="offer-card-subheading">
               Our company offers you a full social package when you apply for a
               job with us.
             </p>
           </div>
-          <div class="offer-card-img">
-            <img class="offer-img" src="img/icon-3.svg" />
-            <h1 class="offer-header">Equipped workplace</h1>
-            <p class="offer-text">
+
+          <div class="offer-card">
+            <img src="img/icon-3.svg" alt="Equipped workplace" />
+            <p class="offer-card-heading">Equipped workplace</p>
+            <p class="offer-card-subheading">
               We will equip your workplace at the expense of the company. You
               can order everything you need for your work.
             </p>
           </div>
 
-          <div class="offer-card-img">
-            <img class="offer-img" src="img/icon-2.svg" />
-            <h1 class="offer-header">Free meals</h1>
-            <p class="offer-text">
+          <div class="offer-card">
+            <img src="img/icon-2.svg" alt="Free meals" />
+            <p class="offer-card-heading">Free meals</p>
+            <p class="offer-card-subheading">
               During breaks between work, you can eat in our cafe for free. You
               will have a huge selection of food available.
             </p>
           </div>
-          <div class="offer-card-img">
-            <img class="offer-img" src="img/icon.svg" />
-            <h1 class="offer-header">Game room</h1>
-            <p class="offer-text">
+
+          <div class="offer-card">
+            <img src="img/icon.svg" alt="Game room" />
+            <p class="offer-card-heading">Game room</p>
+            <p class="offer-card-subheading">
               If you are too tired you can distract yourself from thinking about
               working in the game room.
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="content container">
-        <div class="content-hero">
-          <div class="content-img-box">
-            <img class="content-img" src="img/Image-7.svg" alt="just image" />
-          </div>
-          <div class="content-text-box">
-            <h1 class="content-text">Find your dream job in our company</h1>
-            <p class="content-description">
-              We hope that you will find a job that you have been dreaming about
-              for a long time. If we don't have any vacancies send us your
-              resume!
-            </p>
-          </div>
+    <section class="dream-job-section">
+      <div class="container dream-job-section-content">
+        <div class="dream-job-section-image-wrapper">
+          <img src="img/Image-7.svg" alt="sitting-men" />
         </div>
-      </section>
 
-      <section class="vacancy-section">
-        <div class="container vacancy-section-content">
-          <h4 class="vacancy-section-heading">Free vacancy</h4>
-          <p class="vacancy-section-subheading">
-            Jobs that are available from us and looking for their own people!
-            Browse our vacancies and find the one that is right for you!
+        <div class="dream-job-section-description">
+          <h3 class="dream-job-section-heading">
+            Find your dream job in our company
+          </h3>
+          <p class="dream-job-section-subheading">
+            We hope that you will find a job that you have been dreaming about
+            for a long time. If we don't have any vacancies send us your resume!
           </p>
-          <div class="vacancies">
-            <div class="vacancy-categories">
-              <p><strong>Position</strong></p>
-              <p><strong>Department</strong></p>
-              <p><strong>Location</strong></p>
-            </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="vacancy">
-              <p class="vacancy-position"><strong>Motion designer</strong></p>
-              <p class="vacancy-type"><strong>Design</strong></p>
-              <p class="vacancy-location"><strong>San Francisco</strong></p>
-            </div>
-
-            <div class="vacancy">
-              <p class="vacancy-position"><strong>Art Director</strong></p>
-              <p class="vacancy-type"><strong>Design</strong></p>
-              <p class="vacancy-location"><strong>San Francisco</strong></p>
-            </div>
-
-            <div class="vacancy">
-              <p class="vacancy-position">
-                <strong>Customer relations</strong>
-              </p>
-              <p class="vacancy-type"><strong>Support</strong></p>
-              <p class="vacancy-location"><strong>New York</strong></p>
-            </div>
-
-            <div class="vacancy">
-              <p class="vacancy-position"><strong>React Developer</strong></p>
-              <p class="vacancy-type"><strong>Engineering</strong></p>
-              <p class="vacancy-location"><strong>San Francisco</strong></p>
-            </div>
+    <section class="vacancy-section">
+      <div class="container vacancy-section-content">
+        <h4 class="vacancy-section-heading">Free vacancy</h4>
+        <p class="vacancy-section-subheading">
+          Jobs that are available from us and looking for their own people!
+          Browse our vacancies and find the one that is right for you!
+        </p>
+        <div class="vacancies">
+          <div class="vacancy-categories">
+            <p><strong>Position</strong></p>
+            <p><strong>Department</strong></p>
+            <p><strong>Location</strong></p>
           </div>
 
-          <div class="btn-vacancy">
-            <button class="btn-resume btn-secondary">
-              Don't see a good fit? Submit your resume
-            </button>
+          <div class="vacancy">
+            <p class="vacancy-positions"><strong>Motion Designer</strong></p>
+            <p class="vacancy-type">Design</p>
+            <p class="vacancy-location">San Francisco</p>
+          </div>
+
+          <div class="vacancy">
+            <p class="vacancy-positions"><strong>Art Director</strong></p>
+            <p class="vacancy-type">Design</p>
+            <p class="vacancy-location">San Francisco</p>
+          </div>
+
+          <div class="vacancy">
+            <p class="vacancy-positions"><strong>Customer Relations</strong></p>
+            <p class="vacancy-type">Support</p>
+            <p class="vacancy-location">New York</p>
+          </div>
+
+          <div class="vacancy">
+            <p class="vacancy-positions"><strong>React Developer</strong></p>
+            <p class="vacancy-type">Engineering</p>
+            <p class="vacancy-location">San Francisco</p>
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="section-footer">
+        <div class="btn-vacancy">
+          <button class="btn-resume btn-secondary">
+            Don't see a good fit? Submit your resume
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="logo-col">
+          <div class="footer-logo-column">
             <img class="footer-logo" alt="Move logo" src="img/Logo.svg" />
-            <p class="footer-title">
+
+            <p class="footer-logo-heading">
               Move - Multipurpose Design Template will help you develop your
               website design.
             </p>
-            <div class="social-media-logos">
-              <a href=""><img src="img/dribbble-3.svg" alt="Web Icon" /></a>
-              <a href=""
-                ><img src="img/facebook-3.svg" alt="Facebook icon"
-              /></a>
-              <a href=""><img src="img/Path_104.svg" alt="Twitter icon" /></a>
-              <a href=""><img src="img/youtube-3.svg" alt="Youtube icon" /></a>
+
+            <div class="footer-smedia-logos">
+              <a href="#"><img src="img/dribbble-3.svg" alt="basketball" /></a>
+              <a href="#"><img src="img/Facebook-3.svg" alt="facebook" /></a>
+              <a href="#"><img src="img/Path_104.svg" alt="twitter" /></a>
+              <a href="#"><img src="img/youtube-3.svg" alt="youtube" /></a>
             </div>
           </div>
-          <div class="nav-col">
-            <p class="footer-heading">Home</p>
-            <ul class="footer-nav">
-              <li><a class="footer-link" href="#">Desktop App</a></li>
-              <li><a class="footer-link" href="#">Mobile App</a></li>
-              <li><a class="footer-link" href="#">SaaS</a></li>
-              <li><a class="footer-link" href="#">Event</a></li>
-              <li><a class="footer-link" href="#">Software</a></li>
+
+          <div class="nav-footer">
+            <p class="footer-nav-heading"><strong>Home</strong></p>
+            <ul id="nav-footer-margin">
+              <li><a href="#" class="nav-footer-link">Desktop App</a></li>
+              <li><a href="#" class="nav-footer-link">Mobile App</a></li>
+              <li><a href="#" class="nav-footer-link">SaaS</a></li>
+              <li><a href="#" class="nav-footer-link">Event</a></li>
+              <li><a href="#" class="nav-footer-link">Software</a></li>
             </ul>
           </div>
-          <div class="nav-col">
-            <p class="footer-heading">Pages</p>
-            <ul class="footer-nav">
-              <li><a class="footer-link" href="#">About Us</a></li>
-              <li><a class="footer-link" href="#">Careers</a></li>
-              <li><a class="footer-link" href="#">Case Studies</a></li>
-              <li><a class="footer-link" href="#">Pricing</a></li>
+
+          <div class="nav-footer">
+            <p class="footer-nav-heading"><strong>Pages</strong></p>
+            <ul>
+              <li><a href="#" class="nav-footer-link">About Us</a></li>
+              <li><a href="#" class="nav-footer-link">Careers</a></li>
+              <li><a href="#" class="nav-footer-link">Case Studies</a></li>
+              <li><a href="#" class="nav-footer-link">Pricing</a></li>
             </ul>
           </div>
-          <div class="nav-col">
-            <p class="footer-heading">Blog</p>
-            <ul class="footer-nav">
-              <li><a class="footer-link" href="#">Blog Listing</a></li>
-              <li><a class="footer-link" href="#">Blog Article</a></li>
-              <li><a class="footer-link" href="#">Newsroom</a></li>
+
+          <div class="nav-footer">
+            <p class="footer-nav-heading">
+              <strong>Blog</strong>
+            </p>
+            <ul>
+              <li><a href="#" class="nav-footer-link">Blog Listing</a></li>
+              <li><a href="#" class="nav-footer-link">Blog Article</a></li>
+              <li><a href="#" class="nav-footer-link">Newsroom</a></li>
             </ul>
           </div>
-          <div class="nav-col">
-            <p class="footer-heading">Portfolio</p>
-            <ul class="footer-nav">
-              <li><a class="footer-link" href="#">Portfolio</a></li>
-              <li><a class="footer-link" href="#">Single Case</a></li>
+
+          <div class="nav-footer">
+            <p class="footer-nav-heading"><strong>Portfolio</strong></p>
+            <ul>
+              <li><a href="#" class="nav-footer-link">Portfolio</a></li>
+              <li><a href="#" class="nav-footer-link">Single Case</a></li>
             </ul>
           </div>
         </div>
-        <p class="copy">
-          &copy; <span class="year">2019-2020</span> Move Multipurpose Design
-          Template.
-        </p>
+
+        <div class="copyright">
+          <p>
+            Copyright &copy; <span class="year">2019-2020</span> Move
+            Multipurpose Design Template.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
